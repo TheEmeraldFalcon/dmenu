@@ -2,7 +2,7 @@
 VERSION = 5.2
 
 # paths
-PREFIX = /usr/local
+PREFIX = $${HOME}/.local
 MANPREFIX = $(PREFIX)/share/man
 
 X11INC = /usr/X11R6/include
@@ -29,4 +29,4 @@ CFLAGS   = -std=c99 -pedantic -Wall -Os $(INCS) $(CPPFLAGS)
 LDFLAGS  = $(LIBS)
 
 # compiler and linker
-CC = cc
+CC = clang
